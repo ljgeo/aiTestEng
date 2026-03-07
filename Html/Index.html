@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Test Engineer / SDET Roadmap</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+      background: #f7f9fc;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    th, td {
+      border: 1px solid #dcdfe6;
+      padding: 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #1f4e79;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background: #f4f8fc;
+    }
+    a {
+      color: #0b66c3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .goal {
+      margin-top: 18px;
+      background: white;
+      padding: 14px;
+      border-left: 5px solid #1f4e79;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+  </style>
+</head>
+<body>
+<h1>12-Week Roadmap to Become an AI Test Engineer / SDET</h1>
+<p class="subtitle">Beginner-to-job-ready path for automation testers moving into AI/LLM testing</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Week</th>
+        <th>Focus Area</th>
+        <th>What to Learn</th>
+        <th>Hands-On Tasks</th>
+        <th>Video Tutorial</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Week 1</td>
+        <td>Testing Basics + SDET Mindset</td>
+        <td>
+            <ul>
+                <li>SDLC, STLC, defect lifecycle</li>
+                <li>Manual vs automation testing</li>
+                <li>Functional, regression, smoke, sanity testing</li>
+                <li>What makes AI systems different from normal apps</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Write 10 test cases for a login page</li>
+                <li>Create bug reports for 3 sample issues</li>
+                <li>Read about hallucinations, variability, and non-determinism</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/@ABAutomationHub/videos" target="_blank">
+                AB Automation Hub - testing roadmap videos
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 2</td>
+        <td>Programming Foundation</td>
+        <td>
+            <ul>
+                <li>Choose one language: Java or Python</li>
+                <li>Variables, loops, conditions, functions</li>
+                <li>Arrays/lists, strings, OOP basics</li>
+                <li>Exception handling</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Solve 15 beginner coding problems</li>
+                <li>Write palindrome, duplicate finder, string reverse</li>
+                <li>Practice reading JSON data</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=1kOU-i4jNas" target="_blank">
+                Selenium Python Full Course / Python-friendly path
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 3</td>
+        <td>Web Automation Basics</td>
+        <td>
+            <ul>
+                <li>Selenium/WebDriver basics</li>
+                <li>Locators: id, name, xpath, css</li>
+                <li>Browser actions, waits, assertions</li>
+                <li>Test structure and reusable methods</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Automate login, search, add-to-cart flows</li>
+                <li>Use explicit waits</li>
+                <li>Capture screenshots on failure</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=sSXW0UxFpfI" target="_blank">
+                Java with Selenium Tutorial
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 4</td>
+        <td>Framework Design</td>
+        <td>
+            <ul>
+                <li>Page Object Model (POM)</li>
+                <li>TestNG / Pytest basics</li>
+                <li>Data-driven testing</li>
+                <li>Config files and utilities</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Build a mini framework folder structure</li>
+                <li>Move locators into page classes</li>
+                <li>Run tests from a test runner</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=7Gg-n9UU92k" target="_blank">
+                Selenium Java Complete Project Setup
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 5</td>
+        <td>API Testing Basics</td>
+        <td>
+            <ul>
+                <li>HTTP methods: GET, POST, PUT, PATCH, DELETE</li>
+                <li>Status codes, headers, auth, request/response body</li>
+                <li>JSON parsing and validation</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Test a public API</li>
+                <li>Validate status codes and response body</li>
+                <li>Write negative API tests</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/playlist?list=PL6flErFppaj08LFolWioWyjfSGtCWcvVp" target="_blank">
+                API Testing using REST Assured playlist
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 6</td>
+        <td>Advanced API Automation</td>
+        <td>
+            <ul>
+                <li>REST Assured or requests library</li>
+                <li>Schema validation</li>
+                <li>Chained requests</li>
+                <li>Token-based authentication</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Create a reusable API framework</li>
+                <li>Automate CRUD flow</li>
+                <li>Add logging and reporting</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=U9S2vYhs8D4" target="_blank">
+                First API Automation Test Using Rest Assured and TestNG
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 7</td>
+        <td>CI/CD + Version Control</td>
+        <td>
+            <ul>
+                <li>Git, GitHub, branching</li>
+                <li>Jenkins or GitHub Actions basics</li>
+                <li>Run tests in CI</li>
+                <li>Generate reports automatically</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Push automation project to GitHub</li>
+                <li>Set up a CI job to run tests</li>
+                <li>Save reports as artifacts</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/@ABAutomationHub/videos" target="_blank">
+                CI/CD and test automation channel resources
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 8</td>
+        <td>Intro to AI / LLM Testing</td>
+        <td>
+            <ul>
+                <li>Prompts, tokens, context, temperature</li>
+                <li>Hallucinations</li>
+                <li>Variability and non-determinism</li>
+                <li>Ground truth vs subjective evaluation</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Create 20 prompts for factual testing</li>
+                <li>Run same prompt 5 times and compare outputs</li>
+                <li>Document failure patterns</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=JFxfm-wYUN4" target="_blank">
+                Generative AI Full Course 2025
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 9</td>
+        <td>Promptfoo / LLM Evaluation</td>
+        <td>
+            <ul>
+                <li>Automated prompt evaluation</li>
+                <li>Assertions and scoring</li>
+                <li>Regression testing for prompts</li>
+                <li>Basic red teaming concepts</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Install Promptfoo</li>
+                <li>Write a YAML config for prompt tests</li>
+                <li>Run evals on factual and safety prompts</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=y6Dlsz5P8s8" target="_blank">
+                Promptfoo Red Teaming: Beginner's Guide
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 10</td>
+        <td>LangSmith / Observability</td>
+        <td>
+            <ul>
+                <li>Tracing prompts and responses</li>
+                <li>Evaluation datasets</li>
+                <li>Debugging chain/agent failures</li>
+                <li>Latency, token, and error monitoring</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Create a small LLM app</li>
+                <li>Trace requests in LangSmith</li>
+                <li>Review failed examples and improve prompts</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=sC0KhJHJTP0" target="_blank">
+                Get Started with LangSmith Multi-turn Evaluations
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 11</td>
+        <td>AI Test Strategy</td>
+        <td>
+            <ul>
+                <li>Testing hallucinations</li>
+                <li>Testing variability and consistency</li>
+                <li>Safety, bias, prompt injection basics</li>
+                <li>Human review + automated checks</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Create a test matrix for an AI chatbot</li>
+                <li>Add positive, negative, adversarial prompts</li>
+                <li>Measure output similarity across runs</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/watch?v=e7MlDhfN22s" target="_blank">
+                Red Team an AI App with Promptfoo
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Week 12</td>
+        <td>Portfolio + Interview Prep</td>
+        <td>
+            <ul>
+                <li>Build one end-to-end project</li>
+                <li>Document test strategy</li>
+                <li>Practice SDET + AI testing interview questions</li>
+                <li>Resume/GitHub/LinkedIn polish</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Create 2 portfolio projects:
+                    <ul>
+                        <li>Web + API automation framework</li>
+                        <li>LLM evaluation mini-project</li>
+                    </ul>
+                </li>
+                <li>Write a README with screenshots and results</li>
+                <li>Practice explaining your framework design</li>
+            </ul>
+        </td>
+        <td>
+            <a href="https://www.youtube.com/@ABAutomationHub/videos" target="_blank">
+                Test Automation / interview roadmap videos
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="goal">
+    <h2>End Goal After 12 Weeks</h2>
+    <ul>
+        <li>Build and run web automation tests</li>
+        <li>Automate REST APIs with reusable framework design</li>
+        <li>Understand AI/LLM-specific testing risks</li>
+        <li>Use Promptfoo and LangSmith for GenAI evaluation</li>
+        <li>Create portfolio projects for AI Test Engineer / SDET roles</li>
+    </ul>
+</div>
+</body>
+</html>
