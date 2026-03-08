@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Python in 7 Days for Java Developers</title>
+    <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #f8fbff, #eef4ff);
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 32px 18px 60px;
+    }
+    .hero {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+      margin-bottom: 28px;
+    }
+    h1, h2, h3 { margin-top: 0; color: #0f172a; }
+    h1 { font-size: 2rem; margin-bottom: 10px; }
+    .subtitle { color: #475569; font-size: 1.05rem; margin-bottom: 0; }
+    .highlight {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    .section {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+      margin-bottom: 24px;
+    }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 900px;
+    }
+    th, td {
+      border: 1px solid #dbe3f0;
+      padding: 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #1d4ed8;
+      color: #ffffff;
+      font-size: 0.98rem;
+    }
+    tr:nth-child(even) { background: #f8fbff; }
+    .day {
+      font-weight: bold;
+      color: #1d4ed8;
+      white-space: nowrap;
+    }
+    .code-box {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 14px;
+      overflow-x: auto;
+      margin-top: 10px;
+      font-size: 0.94rem;
+    }
+    pre { margin: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .card {
+      background: #f8fbff;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      padding: 18px;
+    }
+    ul { margin: 10px 0 0; padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .footer-note {
+      margin-top: 10px;
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      padding: 16px;
+      border-radius: 10px;
+      color: #1e3a8a;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <section class="hero">
+        <div class="highlight">7-Day Fast Track</div>
+        <h1>The Fastest Way for Java Developers to Learn Python in 7 Days</h1>
+        <p class="subtitle">
+            A focused roadmap for developers who already know Java and want to transition into Python quickly for automation, API testing, and AI testing.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>7-Day Learning Plan</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                    <th>What to Learn</th>
+                    <th>Java to Python Comparison</th>
+                    <th>Practice Task</th>
+                    <th>Video Tutorial</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="day">Day 1</td>
+                    <td>Syntax Basics</td>
+                    <td>
+                        Variables, print statements, comments, indentation, input/output, basic data types.
+                    </td>
+                    <td>
+                        Java uses braces and semicolons. Python uses indentation and cleaner syntax.
+                        <div class="code-box"><pre>// Java
+System.out.println("Hello");
+
+# Python
+print("Hello")</pre></div>
+                    </td>
+                    <td>Write a simple calculator that adds, subtracts, multiplies, and divides two numbers.</td>
+                    <td><a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank">Python Full Course for Beginners</a></td>
+                </tr>
+                <tr>
+                    <td class="day">Day 2</td>
+                    <td>Conditions and Loops</td>
+                    <td>
+                        if, elif, else, for loops, while loops, range(), loop control.
+                    </td>
+                    <td>
+                        Python for-loops are simpler and often iterate directly over values.
+                        <div class="code-box"><pre>// Java
+for(int i=0; i&lt;5; i++) {
+    System.out.println(i);
+}
+
+# Python
+for i in range(5):
+    print(i)</pre></div>
+                    </td>
+                    <td>Build a number guessing game and a palindrome checker.</td>
+                    <td><a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">Python Tutorial - Loops and Conditions</a></td>
+                </tr>
+                <tr>
+                    <td class="day">Day 3</td>
+                    <td>Functions and Strings</td>
+                    <td>
+                        Functions, parameters, return values, string methods, slicing, formatting.
+                    </td>
+                    <td>
+                        Python functions are shorter and do not require return type declarations.
+                        <div class="code-box"><pre>// Java
+public static int add(int a, int b) {
+    return a + b;
+}
+
+# Python
+def add(a, b):
+    return a + b</pre></div>
+                    </td>
+                    <td>Create functions for string reverse, word count, and duplicate character detection.</td>
+                    <td><a href="https://www.youtube.com/watch?v=u-OmVr_fT4s" target="_blank">Python Functions Tutorial</a></td>
+                </tr>
+                <tr>
+                    <td class="day">Day 4</td>
+                    <td>Lists, Tuples, Sets, Dictionaries</td>
+                    <td>
+                        Python collections and when to use each one.
+                    </td>
+                    <td>
+                        ArrayList ≈ list, HashMap ≈ dictionary, HashSet ≈ set.
+                        <div class="code-box"><pre>// Java
+HashMap&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+map.put("age", 25);
+
+# Python
+person = {"age": 25}</pre></div>
+                    </td>
+                    <td>Store employee names and ages in a dictionary, then search and update values.</td>
+                    <td><a href="https://www.youtube.com/watch?v=W8KRzm-HUcc" target="_blank">Python Data Structures Tutorial</a></td>
+                </tr>
+                <tr>
+                    <td class="day">Day 5</td>
+                    <td>OOP in Python</td>
+                    <td>
+                        Classes, objects, __init__, instance variables, inheritance, encapsulation.
+                    </td>
+                    <td>
+                        Python OOP is similar to Java, but more lightweight.
+                        <div class="code-box"><pre>// Java
+class Car {
+    String model;
+    Car(String model) {
+        this.model = model;
+    }
+}
+
+# Python
+class Car:
+    def __init__(self, model):
+        self.model = model</pre></div>
+                    </td>
+                    <td>Create a class for Employee and a subclass for Tester with one extra method.</td>
+                    <td><a href="https://www.youtube.com/watch?v=JeznW_7DlB0" target="_blank">Python OOP Tutorial</a></td>
+                </tr>
+                <tr>
+                    <td class="day">Day 6</td>
+                    <td>Files, Exceptions, Modules</td>
+                    <td>
+                        Reading/writing files, try/except, importing modules, reusable scripts.
+                    </td>
+                    <td>
+                        Python exception handling is simpler and modules are easy to import.
+                        <div class="code-box"><pre># Python
+try:
+    num = int(input("Enter number: "))
+except ValueError:
+    print("Invalid input")</pre></div>
+                    </td>
+                    <td>Read names from a file, count them, and handle bad file or input errors.</td>
+                    <td><a href="https://www.youtube.com/watch?v=NIWwJbo-9_8" target="_blank">Python Exceptions and File Handling</a></td>
+                </tr>
+                <tr>
+                    <td class="day">Day 7</td>
+                    <td>Python for Automation</td>
+                    <td>
+                        requests, pytest basics, JSON handling, simple automation scripts, intro to Selenium Python.
+                    </td>
+                    <td>
+                        If you know Java automation, this is where Python becomes useful fast for SDET and AI testing.
+                        <div class="code-box"><pre>import requests
+
+response = requests.get("https://api.github.com")
+print(response.status_code)</pre></div>
+                    </td>
+                    <td>Call a public API, validate the status code, parse JSON, and print one field.</td>
+                    <td><a href="https://www.youtube.com/watch?v=1kOU-i4jNas" target="_blank">Python for Automation Testing</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Best Strategy for Java Developers</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>What to Skip</h3>
+                <ul>
+                    <li>Do not spend too long on absolute beginner programming theory.</li>
+                    <li>Do not memorize every Python feature at the start.</li>
+                    <li>Do not focus on advanced libraries before core syntax.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>What to Focus On</h3>
+                <ul>
+                    <li>Syntax differences between Java and Python.</li>
+                    <li>Python collections and string handling.</li>
+                    <li>Functions, OOP, modules, and exceptions.</li>
+                    <li>Automation use cases: APIs, pytest, Selenium, AI testing.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>After These 7 Days</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Week 2 Next Step</h3>
+                <ul>
+                    <li>Learn <strong>pytest</strong> for test execution.</li>
+                    <li>Learn <strong>requests</strong> for API automation.</li>
+                    <li>Start <strong>Selenium Python</strong> for UI automation.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Best Fit for You</h3>
+                <ul>
+                    <li>API testing</li>
+                    <li>SDET interview prep</li>
+                    <li>Automation frameworks</li>
+                    <li>AI / LLM testing with Python</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            <strong>Fastest mindset:</strong> Since you already know Java, treat Python as a simpler, faster syntax layer. Focus on writing working scripts every day instead of trying to master the whole language first.
+        </div>
+    </section>
+</div>
+</body>
+</html>
