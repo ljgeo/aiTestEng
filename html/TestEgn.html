@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2-Week AI Test Engineer Syllabus</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #ffffff;
+      margin: 0;
+      padding: 32px;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    p.lead {
+      text-align: center;
+      color: #cbd5e1;
+      max-width: 900px;
+      margin: 0 auto 24px auto;
+    }
+    .summary {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 24px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #111827;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #334155;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #1e293b;
+    }
+    tr:nth-child(even) {
+      background: #0b1220;
+    }
+    a {
+      color: #93c5fd;
+    }
+    ul {
+      margin: 6px 0 0 18px;
+      padding: 0;
+    }
+    .tracker td {
+      height: 36px;
+    }
+    .small {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <h1>How to Become an AI Test Engineer</h1>
+    <p class="lead">
+        2-week syllabus with study materials, videos, labs, and a daily tracker.
+    </p>
+
+    <div class="summary">
+        <strong>Goal:</strong> In 14 days, build a foundation in AI/LLM behavior, prompt engineering,
+        evaluation methods, red-teaming, and practical testing workflows.
+        <br><br>
+        <strong>Recommended daily study time:</strong> 1.5 to 3 hours
+        <br>
+        <strong>Outcome:</strong> You should be able to explain AI failure modes, design prompt tests,
+        run basic evals, and describe how AI testing differs from traditional QA.
+    </div>
+
+    <h2>2-Week Syllabus</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Day</th>
+            <th>Focus</th>
+            <th>What to Learn</th>
+            <th>Materials / Videos</th>
+            <th>Time</th>
+            <th>Hands-On Task</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Day 1</td>
+            <td>AI & LLM Foundations</td>
+            <td>
+                <ul>
+                    <li>What AI, ML, GenAI, and LLMs are</li>
+                    <li>Inputs, outputs, prompts, tokens, context</li>
+                    <li>Why AI systems are probabilistic</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://developers.google.com/machine-learning/crash-course/llm" target="_blank">Google ML Crash Course - Introduction to LLMs</a><br><br>
+                <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/overview" target="_blank">Google Generative AI Beginner's Guide</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Write a 1-page note: “How AI apps fail differently from normal apps.”</td>
+        </tr>
+
+        <tr>
+            <td>Day 2</td>
+            <td>Core ML Metrics for Testers</td>
+            <td>
+                <ul>
+                    <li>Accuracy, precision, recall, F1</li>
+                    <li>Why accuracy can be misleading</li>
+                    <li>Basic model-quality thinking</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall" target="_blank">Google MLCC - Accuracy, Precision, Recall</a><br><br>
+                <a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Google ML Crash Course</a>
+            </td>
+            <td>1.5 hrs</td>
+            <td>Summarize when to prefer precision vs recall for an AI product.</td>
+        </tr>
+
+        <tr>
+            <td>Day 3</td>
+            <td>Prompt Engineering Basics</td>
+            <td>
+                <ul>
+                    <li>Clear instructions</li>
+                    <li>Few-shot examples</li>
+                    <li>Structured output prompting</li>
+                    <li>Prompt iteration</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://www.deeplearning.ai/courses/" target="_blank">DeepLearning.AI - ChatGPT Prompt Engineering for Developers</a><br><br>
+                <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">OpenAI Prompt Engineering Guide</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Create 3 prompt versions for the same task: weak, improved, structured JSON.</td>
+        </tr>
+
+        <tr>
+            <td>Day 4</td>
+            <td>Prompt Design & Reliability</td>
+            <td>
+                <ul>
+                    <li>Prompt constraints</li>
+                    <li>Output schemas</li>
+                    <li>Reducing ambiguity</li>
+                    <li>Repeatability</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://cloud.google.com/discover/what-is-prompt-engineering" target="_blank">Google - What is Prompt Engineering?</a><br><br>
+                <a href="https://developers.openai.com/cookbook/" target="_blank">OpenAI Cookbook</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Design 5 prompt test cases for a support chatbot.</td>
+        </tr>
+
+        <tr>
+            <td>Day 5</td>
+            <td>AI Failure Modes</td>
+            <td>
+                <ul>
+                    <li>Hallucinations</li>
+                    <li>Inconsistent responses</li>
+                    <li>Schema/format failures</li>
+                    <li>Prompt injection basics</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://www.promptfoo.dev/docs/red-team/quickstart/" target="_blank">Promptfoo Red Team Quickstart</a><br><br>
+                <a href="https://www.promptfoo.dev/docs/intro/" target="_blank">Promptfoo Intro</a>
+            </td>
+            <td>2 hrs</td>
+            <td>List 10 AI test cases: hallucination, invalid JSON, jailbreak, unsafe output, etc.</td>
+        </tr>
+
+        <tr>
+            <td>Day 6</td>
+            <td>Intro to Evals</td>
+            <td>
+                <ul>
+                    <li>What evals are</li>
+                    <li>Reference-based vs reference-free checks</li>
+                    <li>Prompt regression testing</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://developers.openai.com/cookbook/topic/evals/" target="_blank">OpenAI Cookbook - Evals</a><br><br>
+                <a href="https://developers.openai.com/api/docs/guides/prompt-optimizer/" target="_blank">OpenAI - Prompt Optimizer / Evals Guide</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Write down what an eval should check for your target AI app.</td>
+        </tr>
+
+        <tr>
+            <td>Day 7</td>
+            <td>Week 1 Review</td>
+            <td>
+                <ul>
+                    <li>Review prompts, metrics, and failures</li>
+                    <li>Create your own AI testing checklist</li>
+                </ul>
+            </td>
+            <td>
+                Revisit notes and bookmarked material from Days 1–6
+            </td>
+            <td>1.5 hrs</td>
+            <td>Create a 1-page “AI Testing Fundamentals” cheat sheet.</td>
+        </tr>
+
+        <tr>
+            <td>Day 8</td>
+            <td>Promptfoo Setup</td>
+            <td>
+                <ul>
+                    <li>How Promptfoo works</li>
+                    <li>Prompts, providers, tests, assertions</li>
+                    <li>Running your first eval</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://www.promptfoo.dev/docs/getting-started/" target="_blank">Promptfoo Getting Started</a><br><br>
+                <a href="https://www.promptfoo.dev/docs/configuration/guide/" target="_blank">Promptfoo Configuration Guide</a>
+            </td>
+            <td>2.5 hrs</td>
+            <td>Install Promptfoo and run a starter eval.</td>
+        </tr>
+
+        <tr>
+            <td>Day 9</td>
+            <td>DeepEval Setup</td>
+            <td>
+                <ul>
+                    <li>LLM test cases</li>
+                    <li>Metrics and scoring</li>
+                    <li>Hallucination testing</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://deepeval.com/docs/getting-started" target="_blank">DeepEval Getting Started</a><br><br>
+                <a href="https://deepeval.com/docs/evaluation-test-cases" target="_blank">DeepEval Test Cases</a><br><br>
+                <a href="https://deepeval.com/docs/metrics-hallucination" target="_blank">DeepEval Hallucination Metric</a>
+            </td>
+            <td>2.5 hrs</td>
+            <td>Create 3 LLM test cases and define pass/fail criteria.</td>
+        </tr>
+
+        <tr>
+            <td>Day 10</td>
+            <td>Evaluation Metrics for LLM Apps</td>
+            <td>
+                <ul>
+                    <li>Hallucination</li>
+                    <li>Relevancy</li>
+                    <li>Task completion</li>
+                    <li>Reference vs referenceless evaluation</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://deepeval.com/docs/metrics-introduction" target="_blank">DeepEval Metrics Introduction</a><br><br>
+                <a href="https://deepeval.com/tutorials/tutorial-introduction" target="_blank">DeepEval Tutorials</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Define 5 evaluation criteria for a resume-review or chatbot app.</td>
+        </tr>
+
+        <tr>
+            <td>Day 11</td>
+            <td>Observability & Tracing</td>
+            <td>
+                <ul>
+                    <li>Why LLM observability matters</li>
+                    <li>Tracing prompts and responses</li>
+                    <li>Debugging reasoning chains</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://academy.langchain.com/courses/intro-to-langsmith" target="_blank">LangChain Academy - Intro to Agent Observability & Evaluations</a><br><br>
+                <a href="https://www.langchain.com/conceptual-guides/agent-observability-powers-agent-evaluation" target="_blank">LangChain - Agent Observability Guide</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Write what logs and traces you would capture for an LLM app in prod.</td>
+        </tr>
+
+        <tr>
+            <td>Day 12</td>
+            <td>Red Teaming & Safety</td>
+            <td>
+                <ul>
+                    <li>Jailbreaks</li>
+                    <li>Prompt injection</li>
+                    <li>Unsafe outputs</li>
+                    <li>Security mindset for AI QA</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://www.promptfoo.dev/docs/red-team/quickstart/" target="_blank">Promptfoo Red Team Quickstart</a><br><br>
+                <a href="https://www.promptfoo.dev/docs/guides/" target="_blank">Promptfoo Guides</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Draft 8 red-team prompts against a sample assistant.</td>
+        </tr>
+
+        <tr>
+            <td>Day 13</td>
+            <td>Mini Project</td>
+            <td>
+                <ul>
+                    <li>Combine prompts, tests, and evals</li>
+                    <li>Create a small test suite</li>
+                    <li>Think like a QA engineer, not just a learner</li>
+                </ul>
+            </td>
+            <td>
+                Reuse OpenAI, Promptfoo, and DeepEval materials from prior days
+            </td>
+            <td>3 hrs</td>
+            <td>Build a mini AI test plan with 10 prompts, expected checks, and pass/fail notes.</td>
+        </tr>
+
+        <tr>
+            <td>Day 14</td>
+            <td>Portfolio & Interview Prep</td>
+            <td>
+                <ul>
+                    <li>Document what you built</li>
+                    <li>Summarize AI testing skills</li>
+                    <li>Prepare interview explanations</li>
+                </ul>
+            </td>
+            <td>
+                <span class="badge">Free</span><br>
+                <a href="https://developers.openai.com/cookbook/" target="_blank">OpenAI Cookbook</a><br><br>
+                <a href="https://academy.langchain.com/" target="_blank">LangChain Academy</a>
+            </td>
+            <td>2 hrs</td>
+            <td>Create a GitHub/Notion page summarizing your syllabus, tools, and mini project.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 style="margin-top:32px;">Daily Study Tracker</h2>
+    <table class="tracker">
+        <thead>
+        <tr>
+            <th>Day</th>
+            <th>Completed</th>
+            <th>Hours Studied</th>
+            <th>Confidence (1-5)</th>
+            <th>Notes / Blockers</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>Day 1</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 2</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 3</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 4</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 5</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 6</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 7</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 8</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 9</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 10</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 11</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 12</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 13</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Day 14</td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div class="summary">
+        <strong>By the end of 2 weeks, you should be able to:</strong>
+        <ul>
+            <li>Explain how AI testing differs from traditional QA</li>
+            <li>Design prompts and test cases for LLM apps</li>
+            <li>Run basic evals with Promptfoo or DeepEval</li>
+            <li>Describe hallucination, prompt injection, and output-schema failures</li>
+            <li>Show a small portfolio artifact or mini project</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
